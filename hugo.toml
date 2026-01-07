@@ -26,7 +26,7 @@ relativeURLs = false
   env = "production"
   defaultTheme = "auto"
   disableThemeToggle = false
-
+  disableSpecial1stPost = true
   ShowReadingTime = true
   ShowShareButtons = true
   ShowCodeCopyButtons = true
