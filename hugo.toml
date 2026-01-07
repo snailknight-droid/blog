@@ -1,0 +1,68 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "My PaperMod Blog"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+canonifyURLs = false
+relativeURLs = false
+
+[pagination]
+  pagerSize = 12
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[permalinks]
+  posts = "/posts/:year/:month/:slug/"
+
+[params]
+  env = "production"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowToc = true
+  TocOpen = false
+
+[params.profileMode]
+  enabled = true
+  title = "My PaperMod Blog"
+  subtitle = "Articles and notes."
+  imageTitle = "Profile"
+  imageWidth = 120
+  imageHeight = 120
+
+  [[params.profileMode.buttons]]
+    name = "Posts"
+    url = "/posts/"
+
+  [[params.profileMode.buttons]]
+    name = "Tags"
+    url = "/tags/"
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    name = "Search"
+    url = "/search/"
+    weight = 3
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
