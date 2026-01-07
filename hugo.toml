@@ -1,6 +1,6 @@
 baseURL = "https://snailknight-droid.github.io/blog/"
 languageCode = "en-us"
-title = "My PaperMod Blog"
+title = "Snail Knight"
 theme = "PaperMod"
 
 enableRobotsTXT = true
@@ -22,6 +22,7 @@ relativeURLs = false
   posts = "/posts/:year/:month/:slug/"
 
 [params]
+  hideSummary = true
   env = "production"
   defaultTheme = "auto"
   disableThemeToggle = false
@@ -52,4 +53,4 @@ relativeURLs = false
     weight = 3
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"]
