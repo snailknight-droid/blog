@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://snailknight-droid.github.io/blog/"
 languageCode = "en-us"
 title = "My PaperMod Blog"
 theme = "PaperMod"
